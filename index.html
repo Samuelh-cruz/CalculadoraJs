@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="grid grid-template-areas">
+            <input id="resultado" disabled class="display">
+
+            <button onclick="limpar()" class="item clear button-operations">AC</button>
+            <button onclick="inverter()" class="item plus-minus button-operations">+/-</button>
+            <button onclick="porcento()" class="item percent button-operations">%</button>
+            <button onclick="inserirValores('/')" class="item buttonision button-operations-right">÷</button>
+
+            <button onclick="inserirValores('7')" class="item seven button-numbers">7</button>
+            <button onclick="inserirValores('8')" class="item eight button-numbers">8</button>
+            <button onclick="inserirValores('9')" class="item nine button-numbers">9</button>
+            <button onclick="inserirValores('*')" class="item multiplication button-operations-right">x</button>
+
+            <button onclick="inserirValores('4')" class="item four button-numbers">4</button>
+            <button onclick="inserirValores('5')" class="item five button-numbers">5</button>
+            <button onclick="inserirValores('6')" class="item six button-numbers">6</button>
+            <button onclick="inserirValores('-')" class="item minus button-operations-right">-</button>
+
+            <button onclick="inserirValores('1')" class="item one button-numbers">1</button>
+            <button onclick="inserirValores('2')" class="item two button-numbers">2</button>
+            <button onclick="inserirValores('3')" class="item three button-numbers">3</button>
+            <button onclick="inserirValores('+')" class="item plus button-operations-right">+</button>
+            
+            <button onclick="inserirValores('0')" class="item zero button-numbers">0</button>
+            <button onclick="inserirValores('.')" class="item point button-numbers">,</button>
+            <button onclick="calcular()" class="item equal button-operations-right">=</button>
+
+        </section>
+        <script src="calcula.js"></script>
+    </div>
+</body>
+</html>
